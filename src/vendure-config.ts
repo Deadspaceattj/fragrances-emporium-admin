@@ -63,7 +63,7 @@ export const config: VendureConfig = {
             // For local dev, the correct value for assetUrlPrefix should
             // be guessed correctly, but for production it will usually need
             // to be set manually to match your production url.
-            assetUrlPrefix: IS_DEV ? undefined : 'https://www.my-shop.com/assets',
+            assetUrlPrefix: IS_DEV ? undefined : 'https://fragrancesemporium-admin.netlify.app/assets',
         }),
         DefaultJobQueuePlugin.init({ useDatabaseForBuffer: true }),
         DefaultSearchPlugin.init({ bufferUpdates: false, indexStockStatus: true }),
@@ -77,9 +77,9 @@ export const config: VendureConfig = {
                 // The following variables will change depending on your storefront implementation.
                 // Here we are assuming a storefront running at http://localhost:8080.
                 fromAddress: '"example" <noreply@example.com>',
-                verifyEmailAddressUrl: 'http://localhost:8080/verify',
-                passwordResetUrl: 'http://localhost:8080/password-reset',
-                changeEmailAddressUrl: 'http://localhost:8080/verify-email-address-change'
+                verifyEmailAddressUrl: 'https://fragrancesemporium-admin.netlify.app/verify',
+                passwordResetUrl: 'https://fragrancesemporium-admin.netlify.app/password-reset',
+                changeEmailAddressUrl: 'https://fragrancesemporium-admin.netlify.app/verify-email-address-change'
             },
         }),
         AdminUiPlugin.init({
